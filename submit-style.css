@@ -1,0 +1,23 @@
+/*! general  */
+@font-face {
+  font-family: Fredoka;
+  src: url(assets/fonts/FredokaOne-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  background-color: #f2b950;
+}
+
+h1 {
+  max-width: 700px;
+  margin: 10% auto;
+  font-family: Fredoka;
+  font-size: 60px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}

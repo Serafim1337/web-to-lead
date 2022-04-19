@@ -1,0 +1,81 @@
+/*! general  */
+@font-face {
+  font-family: Fredoka;
+  src: url(assets/fonts/FredokaOne-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  background-color: #f2b950;
+}
+
+h1 {
+  max-width: 700px;
+  margin: 30px auto;
+  font-family: Fredoka;
+  font-size: 60px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+/*! inputs and buttons  */
+
+.lead-input,
+.lead-select {
+  width: 450px;
+  height: 50px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #000;
+  font-family: Fredoka;
+  font-size: 20px;
+  color: #dce4f2;
+  transition: ease 0.5s;
+}
+
+.lead-select {
+  color: #000;
+}
+
+.lead-input::placeholder {
+  color: #000;
+}
+
+.lead-input:hover,
+.lead-select:hover {
+  cursor: pointer;
+  border: 2px solid #fff;
+}
+
+.submit-button {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  color: #000;
+  width: 120px;
+  height: 55px;
+  font-family: Fredoka;
+  font-size: 20px;
+  background-color: #dce4f2;
+  transition: ease 0.5s;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  color: #fff;
+}
