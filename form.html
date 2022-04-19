@@ -111,6 +111,7 @@
             id="00N5j00000HXkKd"
             name="00N5j00000HXkKd"
             class="lead-select"
+            placeholder="Product"
           >
             <option hidden disabled selected value>Product</option>
             <option value="VAG001C1">Volkswagen Polo Sedan</option>
@@ -151,14 +152,24 @@
             data-sitekey="6LfMF4YfAAAAAFbCSBl3DLEuver-pLXuUeUpuV3_"
           ></div>
           <br />
-          <input
-            type="submit"
-            name="submit"
-            class="submit-button"
-            value="Submit"
-          />
+          <div class="button-block">
+            <input
+              type="submit"
+              name="submit"
+              class="submit-button"
+              value="Submit"
+            />
+            <div class="disabled-button-block"></div>
+            <div class="info">
+              <p>
+                Be careful, if captcha is not checked, your record won't be
+                saved.
+              </p>
+            </div>
+          </div>
         </form>
       </div>
     </main>
+    <script src="form-script.js"></script>
   </body>
 </html>
