@@ -28,6 +28,35 @@ function isBlank(inputElement) {
   }
 }
 
+function isValidEmail() {
+  if (
+    emailInput.value.includes("@") &&
+    emailInput.value.includes(".com") &&
+    emailInput.value.length != 0
+  ) {
+    emailInput.style.background = "";
+    document.querySelector(".email-error").style.display = "none";
+    return false;
+  } else {
+    emailInput.style.background = "red";
+    document.querySelector(".email-error").style.display = "block";
+    return true;
+  }
+}
+
+function isValidPhone() {
+  var regExp = /[a-zA-Z]/g;
+  if (regExp.test(phoneInput.value) || phoneInput.value.length == 0) {
+    phoneInput.style.background = "red";
+    document.querySelector(".phone-error").style.display = "block";
+    return true;
+  } else {
+    phoneInput.style.background = "";
+    document.querySelector(".phone-error").style.display = "none";
+    return false;
+  }
+}
+
 function notifyOfBlankInput(inputElement) {
   if (isBlank(inputElement)) {
     alert(
@@ -44,9 +73,9 @@ function reloadHandler(event) {
     !isBlank(companyInput) &&
     !isBlank(firstNameInput) &&
     !isBlank(lastNameInput) &&
-    !isBlank(emailInput) &&
-    !isBlank(phoneInput) &&
-    !isBlank(productInput)
+    !isBlank(productInput) &&
+    !isValidEmail() &&
+    !isValidPhone()
   ) {
     submitButtonBlock.style.display = "none";
   } else {

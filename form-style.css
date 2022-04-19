@@ -98,3 +98,15 @@ h1 {
   font-family: Fredoka;
   text-align: center;
 }
+
+.email-error {
+  font-family: Fredoka;
+  color: red;
+  display: none;
+}
+
+.phone-error {
+  font-family: Fredoka;
+  color: red;
+  display: none;
+}
