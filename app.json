@@ -1,0 +1,11 @@
+{
+  "name": "web-to-lead-form",
+  "description": "my form",
+  "keywords": [
+    "lead-form"
+  ],
+  "repository": "https://github.com/Serafim1337/web-to-lead",
+  "addons": [
+    "heroku-postgresql"
+  ]
+}
