@@ -18,6 +18,7 @@ function submitHandler(event) {
   notifyOfBlankInput(emailInput);
   notifyOfBlankInput(phoneInput);
   notifyOfBlankInput(productInput);
+  notifyOfCaptchaUnchecked();
 }
 
 function isBlank(inputElement) {
@@ -97,6 +98,15 @@ function isValidLastName() {
   }
 }
 
+function isCaptchaChecked() {
+  let response = grecaptcha.getResponse();
+  if (response.length > 0) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
 function notifyOfBlankInput(inputElement) {
   if (isBlank(inputElement)) {
     alert(
@@ -108,6 +118,12 @@ function notifyOfBlankInput(inputElement) {
   }
 }
 
+function notifyOfCaptchaUnchecked() {
+  if (isCaptchaChecked()) {
+    alert("Please, check the captcha before submitting your form");
+  }
+}
+
 function reloadHandler(event) {
   if (
     !isBlank(companyInput) &&
@@ -115,7 +131,8 @@ function reloadHandler(event) {
     !isValidFirstName() &&
     !isValidLastName() &&
     !isValidEmail() &&
-    !isValidPhone()
+    !isValidPhone() &&
+    !isCaptchaChecked()
   ) {
     submitButtonBlock.style.display = "none";
   } else {

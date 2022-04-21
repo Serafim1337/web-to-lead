@@ -94,15 +94,11 @@ h1 {
   bottom: 0;
 }
 
-.info {
-  font-family: Fredoka;
-  text-align: center;
-}
-
 .email-error,
 .phone-error,
 .first-name-error,
-.last-name-error {
+.last-name-error,
+.captcha-error {
   max-width: 450px;
   font-family: Fredoka;
   color: red;
