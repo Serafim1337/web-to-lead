@@ -65,7 +65,13 @@
             type="text"
             placeholder="First Name"
             class="lead-input"
-          /><br />
+          />
+          <div class="first-name-error">
+            <p>
+              First name must be one word,starting with capital, 2-20 characters
+            </p>
+          </div>
+          <br />
 
           <input
             id="last_name"
@@ -75,7 +81,13 @@
             type="text"
             placeholder="Last Name"
             class="lead-input"
-          /><br />
+          />
+          <div class="last-name-error">
+            <p>
+              Last name must be one word, starting with capital, 2-40 characters
+            </p>
+          </div>
+          <br />
 
           <input
             id="email"
@@ -101,7 +113,10 @@
             class="lead-input"
           />
           <div class="phone-error">
-            <p>must not contain letters</p>
+            <p>
+              Phone number must not contain letters and must be at least 12
+              symbols length
+            </p>
           </div>
           <br />
 

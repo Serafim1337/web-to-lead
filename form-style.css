@@ -99,13 +99,11 @@ h1 {
   text-align: center;
 }
 
-.email-error {
-  font-family: Fredoka;
-  color: red;
-  display: none;
-}
-
-.phone-error {
+.email-error,
+.phone-error,
+.first-name-error,
+.last-name-error {
+  max-width: 450px;
   font-family: Fredoka;
   color: red;
   display: none;
